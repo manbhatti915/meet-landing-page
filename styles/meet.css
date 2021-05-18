@@ -31,11 +31,26 @@ body {
   text-align: center;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .hero__logo {
+    margin-bottom: 3rem;
+  }
+}
 .hero__image {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
+  width: 110%;
+}
+@media screen and (min-width: 768px) {
+  .hero__image {
+    background-image: url("./../assets/tablet/image-hero.png");
+    background-position: center;
+    background-size: cover;
+    height: 325px;
+    position: relative;
+    left: -4%;
+  }
 }
 .hero__imageleft {
   width: 100%;
@@ -43,18 +58,28 @@ body {
   position: relative;
   left: -20px;
 }
+@media screen and (min-width: 768px) {
+  .hero__imageleft {
+    visibility: hidden;
+  }
+}
 .hero__imageright {
   width: 100%;
   height: 140px;
   position: relative;
   right: 20px;
 }
+@media screen and (min-width: 768px) {
+  .hero__imageright {
+    visibility: hidden;
+  }
+}
 .hero__description {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 .hero__heading {
   text-align: center;
@@ -66,16 +91,36 @@ body {
   padding-left: 3rem;
   padding-right: 3rem;
 }
+@media screen and (min-width: 768px) {
+  .hero__heading h1 {
+    font-size: 40px;
+    padding-left: 13rem;
+    padding-right: 13rem;
+    margin-bottom: 0;
+    margin-top: 3rem;
+  }
+}
 .hero__content p {
   text-align: center;
   color: #87879d;
   font-size: 14px;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .hero__content p {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+}
 .hero__buttons {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .hero__buttons {
+    flex-direction: row;
+  }
 }
 .hero__download {
   color: #fafafa;
@@ -84,6 +129,11 @@ body {
   border-radius: 20px;
   border: none;
   font-weight: 900;
+}
+@media screen and (min-width: 768px) {
+  .hero__download {
+    margin-right: 0.4rem;
+  }
 }
 .hero__download span {
   color: #87879d;
@@ -98,10 +148,21 @@ body {
   border-radius: 20px;
   margin-bottom: 2rem;
 }
+@media screen and (min-width: 768px) {
+  .hero__what {
+    margin: 0;
+    margin-left: 0.4rem;
+  }
+}
 
 .first {
   margin: 0 auto;
   height: 100px;
+}
+@media screen and (min-width: 768px) {
+  .first {
+    margin: 3rem auto;
+  }
 }
 .first__line {
   border-left: 1px solid #87879d;
@@ -126,6 +187,11 @@ body {
 .gallery {
   padding-left: 1rem;
 }
+@media screen and (min-width: 768px) {
+  .gallery {
+    padding-left: 3rem;
+  }
+}
 .gallery__items {
   display: flex;
   flex-wrap: wrap;
@@ -139,10 +205,27 @@ body {
   box-sizing: border-box;
   border-radius: 7px;
 }
+@media screen and (min-width: 768px) {
+  .gallery__item {
+    margin-bottom: 0;
+    width: 160px;
+    height: 140px;
+    margin-right: 0.7rem;
+  }
+}
+.gallery__item:nth-child(4) {
+  margin-right: 0;
+}
 
 .features {
   padding-right: 1rem;
   padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .features {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
 }
 .features__content {
   display: flex;
@@ -157,11 +240,23 @@ body {
   font-size: 12px;
   letter-spacing: 4px;
 }
+@media screen and (min-width: 768px) {
+  .features__title {
+    font-size: 1rem;
+  }
+}
 .features__heading {
   text-align: center;
   padding-left: 34px;
   padding-right: 34px;
   font-size: 22px;
+}
+@media screen and (min-width: 768px) {
+  .features__heading {
+    font-size: 1.7rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
 }
 .features__description {
   color: #87879d;
@@ -170,6 +265,12 @@ body {
   padding-right: 5px;
   text-align: center;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .features__description {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+  }
 }
 
 .second {
@@ -212,6 +313,12 @@ body {
   width: 100%;
   height: 100vw;
 }
+@media screen and (min-width: 768px) {
+  .footer__overlay {
+    height: 45vw;
+    background-image: url("./../assets/tablet/image-footer.jpg");
+  }
+}
 .footer__overlay {
   position: relative;
 }
@@ -227,6 +334,11 @@ body {
   left: 0;
   z-index: 0;
 }
+@media screen and (min-width: 768px) {
+  .footer__overlay::after {
+    height: 45vw;
+  }
+}
 .footer__overlay > * {
   z-index: 5;
   position: relative;
@@ -238,12 +350,25 @@ body {
   margin-right: 2.5rem;
   margin-top: 4rem;
 }
+@media screen and (min-width: 768px) {
+  .footer__heading {
+    font-size: 1.8rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
 .footer__description {
   text-align: center;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   font-size: 14px;
   margin-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .footer__description {
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
 }
 .footer__button {
   background-color: #855fb1;
